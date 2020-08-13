@@ -14,9 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.navigateUp
-import com.google.android.material.navigation.NavigationView
 import com.rezk.newsfeedsapp.store.rootDestinations
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

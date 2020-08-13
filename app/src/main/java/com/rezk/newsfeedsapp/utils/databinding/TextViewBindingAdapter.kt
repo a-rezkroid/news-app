@@ -11,16 +11,13 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 
-
-
 @BindingAdapter(value = ["dateText"])
 fun setDateText(textView: TextView, dateText: String?) {
 
-    dateText?.let {date->
+    dateText?.let { date ->
         try {
             val df1 = SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'", Locale.ENGLISH)
-
-            val df2 = SimpleDateFormat("MMM d, yyyy",Locale.ENGLISH)
+            val df2 = SimpleDateFormat("MMM d, yyyy", Locale.ENGLISH)
             val calender = Calendar.getInstance()
             calender.time = df1.parse(date)
             textView.text = df2.format(calender.time)
@@ -32,13 +29,12 @@ fun setDateText(textView: TextView, dateText: String?) {
     }
 
 
-
 }
 
 @BindingAdapter(value = ["author"])
 fun setByBeforeAuthor(textView: TextView, author: String?) {
     author?.let {
-        textView.setText("By ${author}")
+        textView.text = "By ${author}"
     }
 
 }

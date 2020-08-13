@@ -2,13 +2,11 @@ package com.rezk.newsfeedsapp.base
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
-import android.view.ViewGroup
 import android.view.Window
 import android.widget.FrameLayout
-import android.widget.ProgressBar
 import android.widget.TextView
-
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +21,6 @@ import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import timber.log.Timber
 import kotlin.reflect.KClass
 
 abstract class BaseActivity<P : BaseViewModel, V : ViewDataBinding>(clazz: KClass<P>) :
@@ -47,7 +44,6 @@ abstract class BaseActivity<P : BaseViewModel, V : ViewDataBinding>(clazz: KClas
         initActivity()
         initDialog()
         initLiveDataObservers()
-
         checkInternetConnection()
     }
 
@@ -118,8 +114,9 @@ abstract class BaseActivity<P : BaseViewModel, V : ViewDataBinding>(clazz: KClas
                 .subscribe(
                     { connectivity ->
                         networkLiveEvent.value = connectivity.available()
-                    },
-                    Timber::e
+                    }, {
+                        Log.e("error", it?.localizedMessage ?: "")
+                    }
                 )
         )
     }

@@ -1,6 +1,5 @@
 package com.rezk.newsfeedsapp.base
 
-import android.view.ViewGroup
 import androidx.databinding.ViewDataBinding
 
 abstract class BaseBindingViewHolder<I>(val viewDataBinding: ViewDataBinding) :
