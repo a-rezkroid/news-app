@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--   margin-->
+    <dimen name="margin_nano_extra">2dp</dimen>
+    <dimen name="margin_nano">4dp</dimen>
+    <dimen name="margin_micro">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_extra">24dp</dimen>
+    <dimen name="margin_more_extra">32dp</dimen>
+
+    <dimen name="margin_ultimate">48dp</dimen>
+    <dimen name="margin_ultimate_triple_plus">75dp</dimen>
+
+    <!--    padding-->
+    <dimen name="padding_nano">4dp</dimen>
+    <dimen name="padding_micro">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_extra">24dp</dimen>
+    <dimen name="padding_more_extra">32dp</dimen>
+
+    <!--    text-->
+    <dimen name="textSizeText">12sp</dimen>
+    <dimen name="textSizeTitle">16sp</dimen>
+    <dimen name="textSizeSubTitle">14sp</dimen>
+    <dimen name="textSizeHeadline3">24sp</dimen>
+    <dimen name="textSizeHeadline4">20sp</dimen>
+    <dimen name="textSizeHeadline5">18sp</dimen>
+
+    <!--    elevation-->
+    <dimen name="elevation">1.5dp</dimen>
+    <dimen name="elevation_input">0.3dp</dimen>
+
+    <!--     divider-->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!--    radius-->
+    <dimen name="cornerRadiusSmall">2dp</dimen>
+    <dimen name="cornerRadius">5dp</dimen>
+    <dimen name="cornerRadiusMedium">8dp</dimen>
+
+    <dimen name="cornerRadius_ultimate">48dp</dimen>
+
+</resources>

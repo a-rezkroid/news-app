@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/padding_more_extra"
+        android:paddingEnd="@dimen/padding_medium"
+        android:paddingTop="@dimen/padding_more_extra"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImg"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:text="@string/label_welcome"
+                android:textSize="@dimen/textSizeTitle"
+                app:layout_constraintStart_toEndOf="@id/profileImg"
+                app:layout_constraintTop_toTopOf="@id/profileImg" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_user_name"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintStart_toStartOf="@id/welcomeText"
+                app:layout_constraintTop_toBottomOf="@id/welcomeText" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintBottom_toBottomOf="@id/userName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/welcomeText"
+                app:srcCompat="@drawable/ic_arrow" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/exploreItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ultimate">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/exploreImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_explore" />
+
+            <TextView
+                android:id="@+id/exploreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/label_explore"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintBottom_toBottomOf="@id/exploreImg"
+                app:layout_constraintStart_toEndOf="@id/exploreImg"
+                app:layout_constraintTop_toTopOf="@id/exploreImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/liveChatItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_more_extra">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/liveChatImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_live_chat" />
+
+            <TextView
+                android:id="@+id/liveChatText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/label_live_chat"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintBottom_toBottomOf="@id/liveChatImg"
+                app:layout_constraintStart_toEndOf="@id/liveChatImg"
+                app:layout_constraintTop_toTopOf="@id/liveChatImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/galleryItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_more_extra">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/galleryImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_gallery" />
+
+            <TextView
+                android:id="@+id/galleryText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/label_gallery"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintBottom_toBottomOf="@id/galleryImg"
+                app:layout_constraintStart_toEndOf="@id/galleryImg"
+                app:layout_constraintTop_toTopOf="@id/galleryImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/wishListItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_more_extra">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/wishListImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_wishlist" />
+
+            <TextView
+                android:id="@+id/whishListText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/label_wish_list"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintBottom_toBottomOf="@id/wishListImg"
+                app:layout_constraintStart_toEndOf="@id/wishListImg"
+                app:layout_constraintTop_toTopOf="@id/wishListImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/magazineItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_more_extra">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/magazineImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_magazine" />
+
+            <TextView
+                android:id="@+id/magazineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                android:text="@string/label_magazine"
+                android:textSize="@dimen/textSizeHeadline5"
+                app:layout_constraintBottom_toBottomOf="@id/magazineImg"
+                app:layout_constraintStart_toEndOf="@id/magazineImg"
+                app:layout_constraintTop_toTopOf="@id/magazineImg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

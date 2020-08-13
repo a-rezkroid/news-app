@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_micro"
+        android:paddingBottom="@dimen/padding_micro"
+        android:paddingStart="@dimen/padding_medium"
+        android:paddingEnd="@dimen/padding_medium"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            app:imageToUrl="@{model.urlToImage}"
+            tools:src="@drawable/placeholder" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_stroke_white"
+            android:padding="@dimen/padding_medium">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:ellipsize="end"
+                android:lineSpacingExtra="2dp"
+                android:lines="2"
+                android:maxWidth="350dp"
+                android:text="@{model.title}"
+                android:textSize="@dimen/textSizeHeadline4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="amazing news amazing asd  amazing news  amazing news amazing news amazing news amazing news amazing news amazing news" />
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                app:author="@{model.author}"
+                android:textSize="@dimen/textSizeTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                tools:text="By LiveScience.com" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_micro"
+                android:layout_marginEnd="@dimen/margin_micro"
+                app:dateText="@{model.publishedAt}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/authorName"
+                tools:text="April 3, 2017" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.rezk.newsfeedsapp.store.models.news.Article" />
+    </data>
+</layout>
