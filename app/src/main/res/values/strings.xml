@@ -8,4 +8,5 @@
     <string name="label_wish_list">Wish List</string>
     <string name="label_magazine">E-Magazine</string>
     <string name="label_link_dev">Link Development</string>
+    <string name="label_loading">loading</string>
 </resources>

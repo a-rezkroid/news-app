@@ -25,6 +25,7 @@ class NewsFragment : BaseFragment<NewsViewModel, FragmentNewsBinding>(NewsViewMo
     override fun getLayoutId(): Int = R.layout.fragment_news
 
     override fun initFragment() {
+
         toolBar?.title = getString(R.string.label_link_dev)
 
         dataBindingView?.recyclerView?.adapter = adapter

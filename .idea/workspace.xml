@@ -10,13 +10,47 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7615de1-6980-4447-9e8e-23e62298ffb7" name="Default Changelist" comment="" />
+    <list default="true" id="b7615de1-6980-4447-9e8e-23e62298ffb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_timber_timber_4_7_1_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_16_0_1_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/base/BaseViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/di/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/fragments/NewsFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/fragments/NewsFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_side_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_side_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/loader_dialog.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/loader_dialog.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/news_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/news_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/side_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="FQ6TS865BQ5HTOSK" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -39,7 +73,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1g2hE5CvfiPjB1SEtJABvxB56hX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,6 +87,7 @@
     <property name="DEBUGGABLE_PROCESS" value="com.rezk.newsfeedsapp" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -171,33 +210,33 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="228" y="162" key="AndroidCreateResourceFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1597336531321" />
-    <state x="495" y="254" key="AndroidCreateXmlResourceDialog" timestamp="1597347793473">
+    <state x="495" y="254" key="AndroidCreateXmlResourceDialog" timestamp="1597353371116">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="495" y="254" key="AndroidCreateXmlResourceDialog/0.0.1280.800@0.0.1280.800" timestamp="1597347793473" />
+    <state x="495" y="254" key="AndroidCreateXmlResourceDialog/0.0.1280.800@0.0.1280.800" timestamp="1597353371116" />
     <state x="496" y="172" key="AndroidProcessChooserDialog" timestamp="1597339571883">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="496" y="172" key="AndroidProcessChooserDialog/0.0.1280.800@0.0.1280.800" timestamp="1597339571883" />
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1597345429138">
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1597354915825">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597345429138" />
+    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1597354915825" />
     <state width="1238" height="283" key="GridCell.Tab.0.bottom/0.23.1280.737@0.23.1280.737" timestamp="1597342901547" />
-    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1597345429135">
+    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1597354915824">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597345429135" />
+    <state width="1238" height="231" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1597354915824" />
     <state width="1238" height="283" key="GridCell.Tab.0.center/0.23.1280.737@0.23.1280.737" timestamp="1597342901545" />
-    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1597345429134">
+    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1597354915823">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597345429134" />
+    <state width="1238" height="231" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1597354915823" />
     <state width="1238" height="283" key="GridCell.Tab.0.left/0.23.1280.737@0.23.1280.737" timestamp="1597342901543" />
-    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1597345429137">
+    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1597354915825">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597345429137" />
+    <state width="1238" height="231" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1597354915825" />
     <state width="1238" height="283" key="GridCell.Tab.0.right/0.23.1280.737@0.23.1280.737" timestamp="1597342901546" />
     <state width="1238" height="263" key="GridCell.Tab.1.bottom" timestamp="1597340308016">
       <screen x="0" y="0" width="1280" height="800" />
@@ -219,25 +258,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state width="640" height="368" key="XDebugger.FullValuePopup/0.0.1280.800@0.0.1280.800" timestamp="1597335104534" />
-    <state x="293" y="156" width="857" height="488" key="find.popup" timestamp="1597339940266">
+    <state x="293" y="156" width="857" height="488" key="find.popup" timestamp="1597355598942">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="293" y="156" width="857" height="488" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597339940266" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsViewModel.kt</url>
-          <line>37</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/rezk/newsfeedsapp/ui/news/NewsViewModel.kt</url>
-          <line>25</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="293" y="156" width="857" height="488" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1597355598942" />
   </component>
 </project>

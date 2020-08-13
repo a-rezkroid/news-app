@@ -18,17 +18,12 @@ val networkModule = module {
 
     single {
 
-       val interceptor = HttpLoggingInterceptor()
-        interceptor.level = HttpLoggingInterceptor.Level.BODY
-
         OkHttpClient.Builder()
-            .addInterceptor(interceptor)
             .readTimeout(15, TimeUnit.SECONDS)
             .connectTimeout(15, TimeUnit.SECONDS)
             .callTimeout(15, TimeUnit.SECONDS)
             .writeTimeout(15, TimeUnit.SECONDS)
             .build()
-
     }
 
     single {
@@ -39,8 +34,6 @@ val networkModule = module {
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(APIService::class.java)
     }
-
-
 
     single {
         NetworkManager(get())

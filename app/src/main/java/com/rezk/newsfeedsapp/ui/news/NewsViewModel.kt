@@ -17,10 +17,10 @@ class NewsViewModel(private val newsRepo: NewsRepo) : BaseViewModel() {
 
     val newsLiveData = MutableLiveData<List<Article>>()
 
-    fun getNews(firstSouce: String, secondSource: String) {
+    fun getNews(firstSource: String, secondSource: String) {
         addToDisposable(
 
-            newsRepo.getNewsFromSource(firstSouce)
+            newsRepo.getNewsFromSource(firstSource)
                 .zipWith(newsRepo.getNewsFromSource(secondSource)) { firstList, secondList ->
                     val result = mutableListOf<Article>()
                     result.addAll(firstList)

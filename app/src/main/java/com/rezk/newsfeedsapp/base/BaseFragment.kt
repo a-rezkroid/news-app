@@ -81,28 +81,11 @@ abstract class BaseFragment<P : BaseViewModel, V : ViewDataBinding>(clazz: KClas
     protected open fun loadData() {
 
     }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-    }
+    
 
     override fun onDestroy() {
         disposable.dispose()
         super.onDestroy()
-    }
-
-    fun setupToolbar(@IdRes toolbarId: Int) {
-        toolbar = requireActivity().findViewById(toolbarId)
-    }
-
-    fun setupNavigation(@IdRes navHostId: Int) {
-        toolbar?.let { toolbar ->
-            navController = requireActivity().findNavController(navHostId).also { controller ->
-                NavigationUI.setupWithNavController(toolbar, controller, appBarConfig)
-            }
-        } ?: kotlin.run {
-            navController = requireActivity().findNavController(navHostId)
-        }
     }
 
 

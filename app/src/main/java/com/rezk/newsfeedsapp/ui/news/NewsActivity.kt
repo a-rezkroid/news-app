@@ -4,6 +4,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.res.ResourcesCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.lifecycle.Observer
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.ui.AppBarConfiguration
@@ -13,6 +14,7 @@ import com.google.android.material.navigation.NavigationView
 import com.rezk.newsfeedsapp.R
 import com.rezk.newsfeedsapp.base.BaseActivity
 import com.rezk.newsfeedsapp.databinding.ActivityNewsBinding
+import com.rezk.newsfeedsapp.store.remote.NetworkConstants
 import com.rezk.newsfeedsapp.store.rootDestinations
 import kotlinx.android.synthetic.main.activity_news.*
 import kotlinx.android.synthetic.main.layout_side_menu.view.*
@@ -28,9 +30,8 @@ class NewsActivity : BaseActivity<NewsViewModel, ActivityNewsBinding>(NewsViewMo
     override fun getLayoutId(): Int = R.layout.activity_news
 
     override fun initActivity() {
-
         initNavigation()
-        initSideMenuAction()
+        initSideMenuActions()
     }
 
     private fun initNavigation() {
@@ -43,7 +44,7 @@ class NewsActivity : BaseActivity<NewsViewModel, ActivityNewsBinding>(NewsViewMo
         navigationView.setupWithNavController(navController)
     }
 
-    private fun initSideMenuAction() {
+    private fun initSideMenuActions() {
         findViewById<ConstraintLayout>(R.id.exploreItem).setOnClickListener {
             showToasterMsg(it.exploreText.text.toString())
         }
@@ -63,6 +64,17 @@ class NewsActivity : BaseActivity<NewsViewModel, ActivityNewsBinding>(NewsViewMo
             showToasterMsg(it.whishListText.text.toString())
 
         }
+    }
+
+    override fun initLiveDataObservers() {
+        super.initLiveDataObservers()
+        networkLiveEvent.observe(this, Observer {
+            it?.let { state ->
+                if (state && viewModel.newsLiveData.value == null) {
+                    viewModel.getNews(NetworkConstants.FIRST_SOURCE, NetworkConstants.Second_SOURCE)
+                }
+            }
+        })
     }
 
 

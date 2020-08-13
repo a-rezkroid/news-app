@@ -6,6 +6,7 @@ import android.view.Gravity
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.FrameLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 
 import android.widget.Toast
@@ -52,16 +53,11 @@ abstract class BaseActivity<P : BaseViewModel, V : ViewDataBinding>(clazz: KClas
 
 
     private fun initDialog() {
-        progressDialog = Dialog(this,R.style.Theme_Dialog)
+        progressDialog = Dialog(this)
         progressDialog?.requestWindowFeature(Window.FEATURE_NO_TITLE)
         progressDialog?.setCancelable(false)
         progressDialog?.setCanceledOnTouchOutside(false)
         progressDialog?.setContentView(R.layout.loader_dialog)
-        progressDialog?.window?.setLayout(
-            ViewGroup.LayoutParams.MATCH_PARENT,
-            ViewGroup.LayoutParams.MATCH_PARENT
-        )
-
     }
 
 
@@ -113,7 +109,7 @@ abstract class BaseActivity<P : BaseViewModel, V : ViewDataBinding>(clazz: KClas
         this.disposable.add(disposable)
     }
 
-    fun checkInternetConnection() {
+    private fun checkInternetConnection() {
         addToDisposable(
             ReactiveNetwork.observeNetworkConnectivity(this)
                 .skip(1)

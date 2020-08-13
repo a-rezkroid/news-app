@@ -6,25 +6,16 @@ import com.jakewharton.retrofit2.adapter.rxjava2.HttpException
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import java.io.IOException
-import org.json.JSONObject
-import java.lang.Exception
-import timber.log.Timber
-
 
 open class BaseViewModel : ViewModel() {
 
     val errorMsgLiveData: LiveEvent<String> = LiveEvent()
-    val successMsgLiveData: LiveEvent<String> = LiveEvent()
     val loadingLiveData: LiveEvent<Boolean> = LiveEvent()
-    val unAuthorizedUserLiveData: LiveEvent<Boolean> = LiveEvent()
-    val finishScreenLiveData: LiveEvent<Boolean> = LiveEvent()
     private val disposable: CompositeDisposable = CompositeDisposable()
-
 
     fun addToDisposable(disposable: Disposable) {
         this.disposable.remove(disposable)
         this.disposable.add(disposable)
-
     }
 
     fun processError(throwable: Throwable) {
@@ -32,7 +23,6 @@ open class BaseViewModel : ViewModel() {
         when (throwable) {
             is HttpException -> {
                 errorMsgLiveData.value = "An error occur try again later."
-
             }
 
             is IOException -> {
